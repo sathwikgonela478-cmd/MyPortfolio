@@ -476,7 +476,7 @@ section {
 width: calc(100% - 20px);
 margin: 10px;
 padding: 85px 18px 45px;
-min-height: 100vh;
+min-height: auto;
 border-radius: 8px;
 }
 
@@ -533,43 +533,50 @@ font-size: 19px;
 font-size: 15px;
 }
 
-/* Projects */
+/* Projects - RESPONSIVE TABLE */
 
 #project {
 padding-left: 10px;
 padding-right: 10px;
+overflow-x: auto;
 }
 
 .project h2 {
 font-size: 32px;
 }
 
-/*
-Allows the table to scroll horizontally
-instead of breaking the mobile layout.
-*/
-
-#project {
-overflow-x: auto;
-}
-
 #project table {
 width: 100%;
 max-width: 100%;
 margin: 0 auto;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#project .table-container {
-width: 100%;
-overflow-x: auto;
--webkit-overflow-scrolling: touch;
+#project th {
+background: linear-gradient(135deg, #1d3557 0%, #2d5a7b 100%);
+color: #ffffff;
+font-size: 12px;
+padding: 12px 8px;
+text-transform: uppercase;
+letter-spacing: 0.3px;
 }
 
-#project th,
 #project td {
-padding: 10px;
-font-size: 13px;
-white-space: nowrap;
+padding: 10px 8px;
+font-size: 12px;
+background-color: #fff7ec;
+word-break: break-word;
+white-space: normal;
+}
+
+#project tbody tr:hover {
+background-color: #ffe6cc;
+transform: none;
+}
+
+#project tbody tr:hover td {
+background-color: #ffe6cc;
 }
 
 /* Contact */
@@ -669,6 +676,24 @@ font-size: 17px;
 font-size: 14px;
 }
 
+/* Small Mobile Table */
+#project table {
+width: 100%;
+max-width: 100%;
+font-size: 11px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#project th {
+padding: 10px 6px;
+font-size: 11px;
+}
+
+#project td {
+padding: 8px 6px;
+font-size: 11px;
+}
+
 .contact-form {
 padding: 16px;
 }
@@ -693,4 +718,15 @@ padding-bottom: 60px;
 .home {
 min-height: 100vh;
 }
+
+/* Landscape Table Adjustments */
+#project table {
+font-size: 13px;
 }
+
+#project th,
+#project td {
+padding: 10px 12px;
+}
+}
+

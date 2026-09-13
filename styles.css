@@ -550,13 +550,13 @@ instead of breaking the mobile layout.
 */
 
 #project {
-overflow-x: hidden;
+overflow-x: auto;
 }
 
 #project table {
-width: 700px;
-max-width: none;
-margin: 0;
+width: 100%;
+max-width: 100%;
+margin: 0 auto;
 }
 
 #project .table-container {
@@ -568,7 +568,8 @@ overflow-x: auto;
 #project th,
 #project td {
 padding: 10px;
-font-size: 14px;
+font-size: 13px;
+white-space: nowrap;
 }
 
 /* Contact */

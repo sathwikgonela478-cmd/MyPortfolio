@@ -62,14 +62,14 @@ main h2 {
   text-shadow: 0 3px 12px rgba(15, 23, 42, 0.24), 0 2px 4px rgba(15, 23, 42, 0.18), 0 1px 1px rgba(15, 23, 42, 0.15);
 }
 
-.home h1{
+.home h1 {
   font-size: 38px;
   color: #0f172a;
   margin-bottom: 6px;
 }
 
-.home{
- text-align: center;
+.home {
+  text-align: center;
 }
 
 .home h3 {
@@ -114,114 +114,90 @@ main h2 {
   color: #1f2937;
   text-shadow: 0 2px 8px rgba(31, 41, 55, 0.08);
 }
-.about p b{
+
+.about p b {
   color: #b45309;
 }
-.about h2{
+
+.about h2 {
   font-size: 35px;
   margin-bottom: 20px;
-
 }
 
 /* Skills Section */
+
 .skills {
-    
-    min-height: 100vh;
-    background-color: #f5f1eb;
+  min-height: 100vh;
+  background-color: #f5f1eb;
 }
 
 .skills h2 {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 35px;
-    color: #222;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+  color: #222;
 }
 
 /* Skills List */
+
 .skills-list {
-    max-width: 750px;
-    margin: 0 auto;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 /* Individual Skill Box */
+
 .skill {
-    background-color: #fff;
-    border: 1.5px solid #333;
-    border-left: 6px solid #d97706;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border: 1.5px solid #333;
+  border-left: 6px solid #d97706;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 
-    padding: 16px 20px;
-    margin-bottom: 20px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
 
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 /* Skill Heading */
+
 .skill h3 {
-    margin: 0 0 8px;
-    font-size: 21px;
-    color: #333;
+  margin: 0 0 8px;
+  font-size: 21px;
+  color: #333;
 }
 
 /* Skill Description */
+
 .skill p {
-    margin: 0;
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* Small Hover Effect */
+
 .skill:hover {
-    transform: translateX(5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-    border-left-color: #b45309;
+  transform: translateX(5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  border-left-color: #b45309;
 }
+
+
+/* =========================
+   PROJECT SECTION
+   ========================= */
 
 #project {
   text-align: center;
   padding-top: 90px;
 }
 
-.project h2{
+.project h2 {
   margin-bottom: 20px;
   font-size: 40px;
-}
-
-#project table {
-  width: 90%;
-  max-width: 900px;
-  border-collapse: collapse;
-  background-color: white;
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
-  border-radius: 16px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-#project th,
-#project td {
-  border: 1px solid #dbeafe;
-  padding: 16px 18px;
-  text-align: left;
-  vertical-align: top;
-  color: #1f2937;
-  text-shadow: 0 2px 8px rgba(31, 41, 55, 0.08);
-}
-
-#project th {
-  background: linear-gradient(135deg, #bae6fd, #dbeafe);
-  color: #0f172a;
-}
-
-#project tbody tr:nth-child(even) {
-  background-color: #f8fbff;
-}
-
-#project tbody tr:hover {
-  background-color: #e0f2fe;
-  transition: background-color 0.2s ease;
 }
 
 #project table {
@@ -229,20 +205,22 @@ main h2 {
   max-width: 1000px;
   border-collapse: collapse;
   background-color: #ffffff;
-  border: 1px solid #d1d5db;
+  border: 1px solid #d89c2f;
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+  margin: 0 auto;
 }
 
 #project th,
 #project td {
-  border: 1px solid #064ab1;
+  border: 1px solid #d89c2f;
   padding: 16px;
   text-align: left;
+  vertical-align: top;
 }
 
 #project th {
-  background-color: #1d3557;
-  color: #ffffff;
+  background: linear-gradient(135deg, #0f172a, #1d3557);
+  color: #f5c76b;
   font-size: 16px;
 }
 
@@ -251,25 +229,38 @@ main h2 {
   color: #374151;
 }
 
-.contact-container{
-    width: 100%;
-    max-width: 650px;
-    height: 100%;
+#project tbody tr:nth-child(even) td {
+  background-color: #f5f1eb;
 }
 
-.contact h2{
+#project tbody tr:hover td {
+  background-color: #ffe6b3;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-container {
+  width: 100%;
+  max-width: 650px;
+  height: 100%;
+}
+
+.contact h2 {
   font-size: 38px;
-
 }
-.contact p{
+
+.contact p {
   margin-bottom: 10px;
 }
 
-.form-group{
-   margin-bottom: 18px;
+.form-group {
+  margin-bottom: 18px;
 }
 
-label{
+label {
   margin-bottom: 6px;
   display: block;
   font-weight: 700;
@@ -282,7 +273,6 @@ label{
   border-radius: 12px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
 }
-
 
 .form-group input,
 .form-group textarea {
@@ -381,126 +371,130 @@ footer {
   line-height: 1;
 }
 
-/* =========================================
-RESPONSIVE WEB DESIGN
-Mobile, Tablet & Desktop
-Add this at the END of your CSS
-========================================= */
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+/* Tablet */
 
 @media (max-width: 900px) {
-    section {
-        width: 90%;
-        margin: 15px auto;
-        padding: 80px 20px 40px;
-    }
 
-    header h1 {
-        font-size: 30px;
-    }
+  section {
+    width: 90%;
+    margin: 15px auto;
+    padding: 80px 20px 40px;
+  }
 
-    nav a {
-        font-size: 16px;
-        margin: 5px;
-    }
+  header h1 {
+    font-size: 30px;
+  }
 
-    .home h1 {
-        font-size: 34px;
-    }
+  nav a {
+    font-size: 16px;
+    margin: 5px;
+  }
 
-    .home p {
-        font-size: 20px;
-    }
+  .home h1 {
+    font-size: 34px;
+  }
 
-    #project table {
-        width: 100%;
-    }
+  .home p {
+    font-size: 20px;
+  }
+
+  #project table {
+    width: 100%;
+  }
 }
 
+
+/* Mobile */
+
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 24px;
-    }
 
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  header h1 {
+    font-size: 24px;
+  }
 
-    nav a {
-        font-size: 14px;
-        margin: 3px 5px;
-    }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    section {
-        width: 95%;
-        margin: 10px auto;
-        padding: 70px 15px 35px;
-    }
+  nav a {
+    font-size: 14px;
+    margin: 3px 5px;
+  }
 
-    .home h1 {
-        font-size: 28px;
-    }
+  section {
+    width: 95%;
+    margin: 10px auto;
+    padding: 70px 15px 35px;
+  }
 
-    .home h3 {
-        font-size: 21px;
-    }
+  .home h1 {
+    font-size: 28px;
+  }
 
-    .home p {
-        font-size: 17px;
-    }
+  .home h3 {
+    font-size: 21px;
+  }
 
-    .about h2,
-    .skills h2,
-    .project h2,
-    .contact h2 {
-        font-size: 30px;
-    }
+  .home p {
+    font-size: 17px;
+  }
 
-    #about {
-        font-size: 17px;
-    }
+  .about h2,
+  .skills h2,
+  .project h2,
+  .contact h2 {
+    font-size: 30px;
+  }
 
-    .skill {
-        padding: 14px;
-    }
+  #about {
+    font-size: 17px;
+  }
 
-    .skill h3 {
-        font-size: 18px;
-    }
+  .skill {
+    padding: 14px;
+  }
 
-    .skill p {
-        font-size: 14px;
-    }
+  .skill h3 {
+    font-size: 18px;
+  }
 
-    #project {
-        overflow-x: auto;
-    }
+  .skill p {
+    font-size: 14px;
+  }
 
-    #project table {
-        min-width: 600px;
-        font-size: 13px;
-    }
+  #project {
+    overflow-x: auto;
+  }
 
-    #project th,
-    #project td {
-        padding: 10px;
-    }
+  #project table {
+    min-width: 600px;
+    font-size: 13px;
+  }
 
-    .contact-container {
-        width: 100%;
-    }
+  #project th,
+  #project td {
+    padding: 10px;
+  }
 
-    .contact-form {
-        padding: 18px;
-    }
+  .contact-container {
+    width: 100%;
+  }
 
-    .top-btn {
-        width: 45px;
-        height: 45px;
-        right: 15px;
-        bottom: 15px;
-    }
+  .contact-form {
+    padding: 18px;
+  }
+
+  .top-btn {
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom: 15px;
+  }
 }

@@ -387,346 +387,120 @@ Mobile, Tablet & Desktop
 Add this at the END of your CSS
 ========================================= */
 
-/* ---------- TABLET ---------- */
+/* Responsive */
 
 @media (max-width: 900px) {
+    section {
+        width: 90%;
+        margin: 15px auto;
+        padding: 80px 20px 40px;
+    }
 
-header h1 {
-font-size: 30px;
-}
+    header h1 {
+        font-size: 30px;
+    }
 
-nav a {
-font-size: 16px;
-margin: 0 6px;
-}
+    nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
 
-section {
-width: calc(100% - 30px);
-margin: 15px;
-padding: 90px 25px 50px;
-}
+    .home h1 {
+        font-size: 34px;
+    }
 
-.home h1 {
-font-size: 34px;
-}
+    .home p {
+        font-size: 20px;
+    }
 
-.home h3 {
-font-size: 25px;
+    #project table {
+        width: 100%;
+    }
 }
-
-.home p {
-font-size: 20px;
-max-width: 600px;
-}
-
-#about {
-font-size: 18px;
-}
-
-.skills-list {
-width: 100%;
-max-width: 700px;
-}
-
-#project table {
-width: 100%;
-font-size: 15px;
-}
-
-#project th,
-#project td {
-padding: 12px;
-}
-
-.contact-container {
-max-width: 600px;
-}
-}
-
-/* ---------- MOBILE ---------- */
 
 @media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
 
-/* Header */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-header {
-padding: 12px 10px;
+    nav a {
+        font-size: 14px;
+        margin: 3px 5px;
+    }
+
+    section {
+        width: 95%;
+        margin: 10px auto;
+        padding: 70px 15px 35px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home h3 {
+        font-size: 21px;
+    }
+
+    .home p {
+        font-size: 17px;
+    }
+
+    .about h2,
+    .skills h2,
+    .project h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    #about {
+        font-size: 17px;
+    }
+
+    .skill {
+        padding: 14px;
+    }
+
+    .skill h3 {
+        font-size: 18px;
+    }
+
+    .skill p {
+        font-size: 14px;
+    }
+
+    #project {
+        overflow-x: auto;
+    }
+
+    #project table {
+        min-width: 600px;
+        font-size: 13px;
+    }
+
+    #project th,
+    #project td {
+        padding: 10px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 18px;
+    }
+
+    .top-btn {
+        width: 45px;
+        height: 45px;
+        right: 15px;
+        bottom: 15px;
+    }
 }
-
-header h1 {
-font-size: 25px;
-margin-bottom: 8px;
-}
-
-nav {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 3px;
-}
-
-nav a {
-font-size: 14px;
-margin: 3px 5px;
-}
-
-/* Sections */
-
-section {
-width: calc(100% - 20px);
-margin: 10px;
-padding: 85px 18px 45px;
-min-height: auto;
-border-radius: 8px;
-}
-
-/* Home */
-
-.home h1 {
-font-size: 32px;
-}
-
-.home h3 {
-font-size: 22px;
-}
-
-.home p {
-font-size: 18px;
-max-width: 100%;
-}
-
-/* About */
-
-#about {
-font-size: 17px;
-}
-
-.about h2 {
-font-size: 30px;
-}
-
-#about p {
-max-width: 100%;
-}
-
-/* Skills */
-
-.skills h2 {
-font-size: 30px;
-margin-bottom: 25px;
-}
-
-.skills-list {
-width: 100%;
-}
-
-.skill {
-padding: 15px;
-margin-bottom: 15px;
-}
-
-.skill h3 {
-font-size: 19px;
-}
-
-.skill p {
-font-size: 15px;
-}
-
-/* Projects - RESPONSIVE TABLE */
-
-#project {
-padding-left: 10px;
-padding-right: 10px;
-overflow-x: auto;
-}
-
-.project h2 {
-font-size: 32px;
-}
-
-#project table {
-width: 100%;
-max-width: 100%;
-margin: 0 auto;
-border-radius: 8px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#project th {
-background: linear-gradient(135deg, #1d3557 0%, #2d5a7b 100%);
-color: #ffffff;
-font-size: 12px;
-padding: 12px 8px;
-text-transform: uppercase;
-letter-spacing: 0.3px;
-}
-
-#project td {
-padding: 10px 8px;
-font-size: 12px;
-background-color: #fff7ec;
-word-break: break-word;
-white-space: normal;
-}
-
-#project tbody tr:hover {
-background-color: #ffe6cc;
-transform: none;
-}
-
-#project tbody tr:hover td {
-background-color: #ffe6cc;
-}
-
-/* Contact */
-
-.contact h2 {
-font-size: 32px;
-}
-
-.contact-container {
-width: 100%;
-max-width: 100%;
-}
-
-.contact-form {
-padding: 20px;
-}
-
-label {
-font-size: 16px;
-}
-
-.form-group input,
-.form-group textarea {
-font-size: 15px;
-padding: 11px 12px;
-}
-
-/* Footer */
-
-footer {
-padding: 20px 10px;
-}
-
-.footer-social {
-gap: 12px;
-}
-
-.footer-social a {
-width: 42px;
-height: 42px;
-font-size: 17px;
-}
-
-/* Back to top */
-
-.top-btn {
-width: 45px;
-height: 45px;
-right: 15px;
-bottom: 15px;
-font-size: 18px;
-}
-}
-
-/* ---------- SMALL MOBILE ---------- */
-
-@media (max-width: 400px) {
-
-header h1 {
-font-size: 22px;
-}
-
-nav a {
-font-size: 12px;
-margin: 2px 3px;
-}
-
-section {
-padding-left: 14px;
-padding-right: 14px;
-}
-
-.home h1 {
-font-size: 28px;
-}
-
-.home h3 {
-font-size: 20px;
-}
-
-.home p {
-font-size: 16px;
-}
-
-.about h2,
-.skills h2,
-.project h2,
-.contact h2 {
-font-size: 28px;
-}
-
-.skill h3 {
-font-size: 17px;
-}
-
-.skill p {
-font-size: 14px;
-}
-
-/* Small Mobile Table */
-#project table {
-width: 100%;
-max-width: 100%;
-font-size: 11px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#project th {
-padding: 10px 6px;
-font-size: 11px;
-}
-
-#project td {
-padding: 8px 6px;
-font-size: 11px;
-}
-
-.contact-form {
-padding: 16px;
-}
-
-.footer-social a {
-width: 38px;
-height: 38px;
-font-size: 16px;
-}
-}
-
-/* ---------- LANDSCAPE MOBILE ---------- */
-
-@media (max-width: 900px) and (orientation: landscape) {
-
-section {
-min-height: auto;
-padding-top: 100px;
-padding-bottom: 60px;
-}
-
-.home {
-min-height: 100vh;
-}
-
-/* Landscape Table Adjustments */
-#project table {
-font-size: 13px;
-}
-
-#project th,
-#project td {
-padding: 10px 12px;
-}
-}
-

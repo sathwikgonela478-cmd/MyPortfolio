@@ -189,7 +189,7 @@ main h2 {
   font-size: 40px;
 }
 
-#projects table {
+#project table {
   width: 90%;
   max-width: 900px;
   border-collapse: collapse;
@@ -200,8 +200,8 @@ main h2 {
   margin: 0 auto;
 }
 
-#projects th,
-#projects td {
+#project th,
+#project td {
   border: 1px solid #dbeafe;
   padding: 16px 18px;
   text-align: left;
@@ -210,16 +210,16 @@ main h2 {
   text-shadow: 0 2px 8px rgba(31, 41, 55, 0.08);
 }
 
-#projects th {
+#project th {
   background: linear-gradient(135deg, #bae6fd, #dbeafe);
   color: #0f172a;
 }
 
-#projects tbody tr:nth-child(even) {
+#project tbody tr:nth-child(even) {
   background-color: #f8fbff;
 }
 
-#projects tbody tr:hover {
+#project tbody tr:hover {
   background-color: #e0f2fe;
   transition: background-color 0.2s ease;
 }

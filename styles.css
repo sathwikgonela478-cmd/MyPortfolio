@@ -1,8 +1,24 @@
+/* =========================
+  GLOBAL RESET AND VARIABLES
+  ========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --navy: #0f172a;
+  --navy-light: #1d3557;
+  --gold: #f5c76b;
+  --gold-dark: #b45309;
+  --white: #ffffff;
+}
+
+/* =========================
+  PAGE SCROLLING AND BODY
+  ========================= */
 
 html {
   scroll-behavior: smooth;
@@ -14,6 +30,10 @@ body {
   color: #1f2937;
   line-height: 1.6;
 }
+
+/* =========================
+  HEADER AND NAVIGATION
+  ========================= */
 
 header {
   background: linear-gradient(135deg, #0f172a 0%, #1d3557 100%);
@@ -44,6 +64,10 @@ nav a:hover {
   color: #e3a62b; 
 }
 
+/* =========================
+  COMMON SECTION LAYOUT
+  ========================= */
+
 section {
   min-height: 100vh;
   width: calc(100% - 40px);
@@ -58,10 +82,18 @@ section {
   align-items: center;
 }
 
+/* =========================
+  HEADING STYLES
+  ========================= */
+
 main h1,
 main h2 {
   text-shadow: 0 3px 12px rgba(15, 23, 42, 0.24), 0 2px 4px rgba(15, 23, 42, 0.18), 0 1px 1px rgba(15, 23, 42, 0.15);
 }
+
+/* =========================
+  HOME SECTION
+  ========================= */
 
 .home h1 {
   font-size: 38px;
@@ -103,12 +135,16 @@ main h2 {
   background-color: #e0ad4a;
 }
 
-#about {
+/* =========================
+  ABOUT SECTION
+  ========================= */
+
+.about {
   text-align: center;
   font-size: 20px;
 }
 
-#about p {
+.about p {
   max-width: 750px;
   margin-bottom: 15px;
   font-weight: 400;
@@ -125,7 +161,9 @@ main h2 {
   margin-bottom: 20px;
 }
 
-/* Skills Section */
+/* =========================
+  SKILLS SECTION
+  ========================= */
 
 .skills {
   min-height: 100vh;
@@ -139,14 +177,14 @@ main h2 {
   color: #222;
 }
 
-/* Skills List */
+/* Skills list container */
 
 .skills-list {
   max-width: 750px;
   margin: 0 auto;
 }
 
-/* Individual Skill Box */
+/* Individual skill card */
 
 .skill {
   background-color: #fff;
@@ -161,7 +199,7 @@ main h2 {
   transition: 0.3s ease;
 }
 
-/* Skill Heading */
+/* Skill card heading */
 
 .skill h3 {
   margin: 0 0 8px;
@@ -169,7 +207,7 @@ main h2 {
   color: #333;
 }
 
-/* Skill Description */
+/* Skill card description */
 
 .skill p {
   margin: 0;
@@ -178,7 +216,7 @@ main h2 {
   line-height: 1.5;
 }
 
-/* Small Hover Effect */
+/* Skill card hover effect */
 
 .skill:hover {
   transform: translateX(5px);
@@ -188,10 +226,10 @@ main h2 {
 
 
 /* =========================
-   PROJECT SECTION
-   ========================= */
+  PROJECTS SECTION
+  ========================= */
 
-#project {
+.project {
   text-align: center;
   padding-top: 90px;
 }
@@ -201,7 +239,7 @@ main h2 {
   font-size: 40px;
 }
 
-#project table {
+.project table {
   width: 90%;
   max-width: 1000px;
   border-collapse: collapse;
@@ -211,37 +249,37 @@ main h2 {
   margin: 0 auto;
 }
 
-#project th,
-#project td {
+.project th,
+.project td {
   border: 1px solid #d89c2f;
   padding: 16px;
   text-align: left;
   vertical-align: top;
 }
 
-#project th {
+.project th {
   background: linear-gradient(135deg, #0f172a, #1d3557);
   color: #f5c76b;
   font-size: 16px;
 }
 
-#project td {
+.project td {
   background-color: #fff7ec;
   color: #374151;
 }
 
-#project tbody tr:nth-child(even) td {
+.project tbody tr:nth-child(even) td {
   background-color: #f5f1eb;
 }
 
-#project tbody tr:hover td {
+.project tbody tr:hover td {
   background-color: #ffe6b3;
 }
 
 
 /* =========================
-   CONTACT
-   ========================= */
+  CONTACT SECTION AND FORM
+  ========================= */
 
 .contact-container {
   width: 100%;
@@ -261,7 +299,7 @@ main h2 {
   margin-bottom: 18px;
 }
 
-label {
+.contact-form label {
   margin-bottom: 6px;
   display: block;
   font-weight: 700;
@@ -306,6 +344,10 @@ label {
   background: #aa750b;
 }
 
+/* =========================
+  FOOTER AND SOCIAL LINKS
+  ========================= */
+
 footer {
   background-color: #0f172a;
   color: #ffffff;
@@ -343,6 +385,10 @@ footer {
   box-shadow: 0 5px 15px rgba(245, 199, 107, 0.4);
 }
 
+/* =========================
+  BACK-TO-TOP BUTTON
+  ========================= */
+
 .top-btn {
   position: fixed;
   right: 20px;
@@ -374,10 +420,10 @@ footer {
 
 
 /* =========================
-   RESPONSIVE
-   ========================= */
+  RESPONSIVE DESIGN
+  ========================= */
 
-/* Tablet */
+/* Tablet layout */
 
 @media (max-width: 900px) {
 
@@ -404,13 +450,13 @@ footer {
     font-size: 20px;
   }
 
-  #project table {
+  .project table {
     width: 100%;
   }
 }
 
 
-/* Mobile */
+/* Mobile layout */
 
 @media (max-width: 600px) {
 
@@ -454,7 +500,7 @@ footer {
     font-size: 30px;
   }
 
-  #about {
+  .about {
     font-size: 17px;
   }
 
@@ -470,17 +516,17 @@ footer {
     font-size: 14px;
   }
 
-  #project {
+  .project {
     overflow-x: auto;
   }
 
-  #project table {
+  .project table {
     min-width: 600px;
     font-size: 13px;
   }
 
-  #project th,
-  #project td {
+  .project th,
+  .project td {
     padding: 10px;
   }
 
